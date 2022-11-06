@@ -1,0 +1,15 @@
+@model Laba_5.Models.Order
+@{
+    ViewBag.Title = "Добавление заказа пользователю";
+}
+<form asp-action="Create_Order" asp-controller="home">
+
+    <div class="form-group">
+        <label asp-for="Date" class="control-label">Дата заказа</label>
+        <input type="text" asp-for="Date" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Отправить и перейти к выбору товара" class="btn btn-default" />
+    </div>
+    <h3>Product you will choose soon</h3>
+</form>

@@ -1,0 +1,17 @@
+﻿
+@model IEnumerable<Laba_5.Models.Order>
+@{
+    ViewBag.Title = "Все заказы";
+}
+<h2>Cписок заказов</h2>
+<table class="table">
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                Дата создания: @item.Date || Название товара: @item.Product
+            </td>
+        </tr>
+    }
+</table>

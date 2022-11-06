@@ -1,0 +1,17 @@
+@model Laba_5.Models.Order
+@{
+    ViewBag.Title = "Просмотр подробностей заказа пользователя";
+}
+<h2>Заказ № @Model.Id</h2>
+<div>
+    <dl class="dl-horizontal">
+        <dt>Идентификатор</dt>
+        <dd>@Model.Id</dd>
+ 
+        <dt>Товар</dt>
+        <dd>@Model.Product</dd>
+
+        <dt>Дата заказа</dt>
+        <dd>@Model.Date</dd>
+    </dl>
+</div>

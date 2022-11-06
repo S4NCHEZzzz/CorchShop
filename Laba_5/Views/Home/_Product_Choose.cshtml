@@ -1,0 +1,21 @@
+@model IEnumerable<Laba_5.Models.Product>
+@{
+    ViewBag.Title = "Добавление товара в заказ";
+}
+ <table>
+<tr>
+    <td>
+        <select name="Name">
+            {  @foreach (var item in Model)
+                 {  
+                     <option>@item.Name </option>
+                  }
+            }
+        </select>
+    </td>
+</tr>
+    </table>
+     <table>
+          <div class="form-group">
+        <input type="submit" value="Готово" class="btn btn-default" />
+    </div>

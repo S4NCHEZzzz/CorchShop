@@ -1,0 +1,24 @@
+@model Laba_5.Models.Kostil
+@{
+    ViewBag.Title = "Добавление товара в заказ";
+}
+<form method="POST">
+ 
+ <table>
+<tr>
+    <td>
+        <select name="name_kostil">
+            {  @foreach (var item in Model.product)
+                 {  
+                     <option>@item.Name </option>
+                  }
+            }
+        </select>
+    </td>
+</tr>
+    </table>
+     <table>
+          <div class="form-group">
+        <input type="submit" value="Готово" class="btn btn-default" />
+    </div>
+</form>

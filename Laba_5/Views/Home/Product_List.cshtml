@@ -1,0 +1,19 @@
+@model IEnumerable<Laba_5.Models.Product>
+@{
+    ViewBag.Title = "Все товары";
+}
+<h2>Cписок товаров</h2>
+<a asp-action="Create_Product">Добавить товар</a>
+<table class="table">
+     
+    @foreach (var item in Model)
+    {
+        <tr><td>@item.Name</td>
+            <td>
+                <a asp-action="Product_Details" asp-controller="Home" asp-route-id="@item.Id">Подробнее</a> |
+                <a asp-action="Product_Edit" asp-controller="Home" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Product_Delete" asp-controller="Home" asp-route-id="@item.Id">Удалить</a>
+
+            </td></tr>
+    }
+</table>

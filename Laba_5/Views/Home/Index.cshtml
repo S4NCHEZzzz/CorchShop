@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Laba_5.Models.User>
+@{
+    ViewBag.Title = "Все пользователи";
+}
+    <h2>Cписок заказчиков</h2>
+<a asp-action="Create">Добавить заказчика</a>
+<table class="table">
+     
+    @foreach (var item in Model)
+    {
+        <tr><td>@item.Name</td>
+            <td>
+                <a asp-action="Details" asp-controller="Home" asp-route-id="@item.Id">Подробнее</a> |
+                <a asp-action="Edit" asp-controller="Home" asp-route-id="@item.Id">Изменить</a> |
+                <a asp-action="Delete" asp-controller="Home" asp-route-id="@item.Id">Удалить</a> |
+                <a asp-action="Create_Order" asp-controller="Home" asp-route-itemid="@item.Id">Добавить заказ</a>
+            </td></tr>
+    }
+</table>
+
+<div id="nubexDiv" class="overlay">
+ <video id="nubexVideo" width="100%" height="auto" loop="loop" autoplay="autoplay" preload="auto">
+   <source src="https://www.youtube.com/watch?v=8gR6uWsDaCI"></source>
+   <source src="https://www.youtube.com/watch?v=8gR6uWsDaCI" type="video/webm"></source>
+ </video>
+</div>
