@@ -31,4 +31,4 @@ Frontend:
   2. Чернышов Александр (администрирование, прикладное программирование, управление проектами)
 
 ✅ Landing Page:
- [landing](https://github.com/S4NCHEZzzz/CorchShop/blob/master/index.html)
+ [landing](https://S4NCHEZzzz.github.io/CorchShop)
