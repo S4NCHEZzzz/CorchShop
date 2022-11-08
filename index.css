@@ -1,0 +1,36 @@
+
+.menu th {
+    
+    padding: 0 40px;
+  }
+.add{
+    margin-left:100px;
+}
+header{
+    margin-left:100px
+ 
+}
+body{
+    background:  no-repeat;
+    background-size: 100% 100%;  
+}
+.offer td{
+    border-left:2px solid black;
+    
+}
+.offer td:first-child {
+    border-left: none;
+    padding: 0 100px;
+    
+}
+.img{
+    margin-top: 15%;
+    margin-left: 100px;
+}
+footer{
+    position: fixed;
+    left: 0; bottom: 0;
+    background-color: grey;
+    width: 100%;
+    height: auto;
+}
